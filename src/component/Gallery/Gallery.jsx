@@ -1,4 +1,5 @@
 import React from "react";
+import { BiImageAdd } from "react-icons/bi";
 
 const Gallery = ({
   images,
@@ -8,9 +9,10 @@ const Gallery = ({
   handleDragEnd,
   handleDragOver,
 }) => {
+  // md:grid-cols-4 lg:grid-cols-6
   return (
     <div className="py-4 px-6 ">
-      <div className="grid grid-cols-5 gap-6 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 ">
         {images.map((image, index) => (
           <div
             key={image.id}
@@ -38,9 +40,14 @@ const Gallery = ({
         ))}
         <label
           htmlFor="image-upload"
-          className="border-2 rounded-lg w-full h-full border-dashed flex  justify-center items-center min-h-[143.61px]"
+          className="border-2 font-semibold rounded-lg w-full h-full border-dashed flex  justify-center items-center min-h-[143.61px]"
         >
-          Add Images
+          <span>
+            <span className="flex  justify-center items-center h-full w-full">
+              <BiImageAdd />
+            </span>
+            Add Images
+          </span>
         </label>
         <input
           id="image-upload"
