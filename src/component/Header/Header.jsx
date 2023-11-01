@@ -15,7 +15,7 @@ const Header = ({ images, handleDelete }) => {
           </label>
         </div>
       ) : (
-        <h1 className="font-bold text-xl">Magic Gallery</h1>
+        <h1 className="font-bold">Magic Gallery</h1>
       )}
 
       {total.length > 0 && (

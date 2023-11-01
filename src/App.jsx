@@ -74,7 +74,7 @@ const App = () => {
 
   return (
     <main className=" min-h-screen h-full  w-full overflow-y-auto bg-slate-200 flex justify-center items-center">
-      <div className="max-w-[1000px] mx-auto bg-white w-full">
+      <div className="max-w-[1000px] mx-auto bg-white w-full mt-6 mb-10 rounded-lg">
         <Header handleDelete={handleDelete} images={images} />
         <Gallery
           handleDragOver={handleDragOver}

@@ -1,5 +1,6 @@
 import React from "react";
 import { BiImageAdd } from "react-icons/bi";
+import "./Gallery";
 
 const Gallery = ({
   images,
@@ -15,7 +16,6 @@ const Gallery = ({
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 ">
         {images.map((image, index) => (
           <div
-            key={image.id}
             className={`${
               index === 0 ? "col-span-2 row-span-2" : ""
             } border-2 rounded-lg group relative`}
