@@ -1,6 +1,13 @@
 import React from "react";
 
-const Gallery = ({ images, handleFunc, handleImageChange,handleDragStart , handleDragEnd, handleDragOver}) => {
+const Gallery = ({
+  images,
+  handleFunc,
+  handleImageAdd,
+  handleDragStart,
+  handleDragEnd,
+  handleDragOver,
+}) => {
   return (
     <div className="py-4 px-6 ">
       <div className="grid grid-cols-5 gap-6 ">
@@ -12,7 +19,7 @@ const Gallery = ({ images, handleFunc, handleImageChange,handleDragStart , handl
             } border-2 rounded-lg group relative`}
             draggable
             onDragStart={() => handleDragStart(image)}
-            onDragOver={(e) => handleDragOver(e,index)}
+            onDragOver={(e) => handleDragOver(e, index)}
             onDragEnd={handleDragEnd}
           >
             <div
@@ -40,7 +47,7 @@ const Gallery = ({ images, handleFunc, handleImageChange,handleDragStart , handl
           hidden
           type="file"
           accept="image/*"
-          onChange={handleImageChange}
+          onChange={handleImageAdd}
         />
       </div>
     </div>

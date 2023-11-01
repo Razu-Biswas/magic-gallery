@@ -29,7 +29,7 @@ const App = () => {
     setImages(filtered);
   };
 
-  const handleImageChange = (e) => {
+  const handleImageAdd = (e) => {
     const file = e.target.files[0];
 
     if (file) {
@@ -80,7 +80,7 @@ const App = () => {
           handleDragOver={handleDragOver}
           handleDragEnd={handleDragEnd}
           handleDragStart={handleDragStart}
-          handleImageChange={handleImageChange}
+          handleImageAdd={handleImageAdd}
           handleFunc={handleSelect}
           images={images}
         />
