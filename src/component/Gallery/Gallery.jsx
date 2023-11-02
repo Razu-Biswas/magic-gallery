@@ -1,6 +1,5 @@
 import React from "react";
 import { BiImageAdd } from "react-icons/bi";
-import "./Gallery";
 
 const Gallery = ({
   images,
@@ -25,9 +24,9 @@ const Gallery = ({
             onDragEnd={handleDragEnd}
           >
             <div
-              className={`absolute top-0 left-0 bg-gray-900/50 w-full h-full rounded-lg ${
+              className={`absolute top-0 left-0 bg-gray-900/50 w-full h-full rounded-lg  ${
                 image.checked ? "visible" : "invisible"
-              } group-hover:visible duration-300`}
+              } group-hover:visible duration-400`}
             >
               <input
                 onChange={(e) => handleFunc(e, image.id)}

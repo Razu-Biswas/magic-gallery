@@ -1,5 +1,0 @@
-.dragged-item {
-    transform: scale(1.1); /* Example transition effect, scaling up the item */
-    transition: transform 0.2s ease; /* Smooth transition over 0.2 seconds */
-  }
-  
